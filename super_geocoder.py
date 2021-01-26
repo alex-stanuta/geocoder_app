@@ -36,5 +36,4 @@ def download():
 		 as_attachment=True)
 
 if __name__ == "__main__":
-	app.debug = True
-	app.run()
+	app.run(debug=app.config['DEBUG'], port=app.config['PORT'])
