@@ -1,6 +1,5 @@
 from flask import Flask, request, render_template, send_file, send_from_directory
 from geopy.geocoders import ArcGIS as ag
-import os
 import pandas as pd
 
 app = Flask(__name__)
@@ -37,5 +36,4 @@ def download():
 		 as_attachment=True)
 
 if __name__ == "__main__":
-	port = int(os.environ.get('PORT', 5000))
 	app.run()
