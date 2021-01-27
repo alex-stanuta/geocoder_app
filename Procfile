@@ -1,1 +1,1 @@
-web: gunicorn app:app
+web: gunicorn super_geocoder:app
